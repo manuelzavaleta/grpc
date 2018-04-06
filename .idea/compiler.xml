@@ -4,6 +4,8 @@
     <bytecodeTargetLevel>
       <module name="microservices_main" target="1.8" />
       <module name="microservices_test" target="1.8" />
+      <module name="training-microservices_main" target="1.8" />
+      <module name="training-microservices_test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
