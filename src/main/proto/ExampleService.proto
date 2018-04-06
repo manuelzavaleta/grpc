@@ -6,6 +6,16 @@ package com.example.server;
 
 message HelloRequest {
     string name = 1;
+    int32 age = 2;
+    enum MusicGenres {
+        POP = 0;
+        ROCK = 1;
+        JAZZ = 2;
+        METAL = 3;
+        OTHER = 4;
+    }
+    repeated MusicGenres genre = 4;
+
 }
 
 message HelloResponse {
