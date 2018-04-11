@@ -1,3 +1,5 @@
+package com.test;
+
 import com.example.server.GreetingServiceGrpc;
 import com.example.server.HelloRequest;
 import com.example.server.HelloResponse;

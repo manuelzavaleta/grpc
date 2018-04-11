@@ -23,6 +23,20 @@ repositories {
 // updating the version in our release process.
 def nettyTcNativeVersion = '2.0.7.Final'
 
+//task execute(type:JavaExec) {
+//    main = com.microservices.servers.MyGrpcServer
+//    classpath = sourceSets.main.runtimeClasspath
+//}
+
+test {
+    useTestNG {
+        suites 'src/test/resources/testng.xml'
+        listeners << 'org.testng.reporters.EmailableReporter'
+    }
+
+    reports.html.enabled = true
+}
+
 dependencies {
     compile "com.google.api.grpc:proto-google-common-protos:1.0.0"
 
